@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/list_records"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/image_button_playing_record"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="2"
+            android:background="@drawable/ic_play_arrow_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/image_button_playing_previous"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="2"
+            android:background="@drawable/ic_skip_previous_black_24dp"
+            android:clickable="true" />
+
+        <ImageButton
+            android:id="@+id/image_button_playing_next"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="2"
+            android:background="@drawable/ic_skip_next_black_24dp"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/lable_playing_record"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:gravity="center"
+            android:textSize="16sp"
+            tools:text="trek_00000124552114552244525544"
+            android:layout_weight="8" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/count_timer_playing_record"
+        android:layout_width="match_parent"
+        android:layout_marginStart="8dp"
+        android:textSize="16sp"
+        android:layout_height="wrap_content"
+        tools:text="Воспроизведение 0 секунд"/>
+
+    <Button
+        android:id="@+id/start_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start record" />
+
+</LinearLayout>

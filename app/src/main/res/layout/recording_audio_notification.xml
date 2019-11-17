@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_weight="1"
+        android:id="@+id/image_record"
+        android:layout_gravity="center_vertical"
+        android:layout_width="48dp"
+        android:layout_height="48dp" />
+
+    <TextView
+        android:layout_weight="7"
+        android:id="@+id/text_recording"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_gravity="center_vertical"
+        tools:text="Идет запись 0 минут 5 секунд" />
+
+    <Button
+        android:layout_weight="1"
+        android:id="@+id/btnRecord"
+        android:background="@drawable/ic_play_arrow_black_24dp"
+        android:padding="8dp"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:layout_weight="1"
+        android:id="@+id/btnStop"
+        android:background="@drawable/ic_stop_black_24dp"
+        android:padding="8dp"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
